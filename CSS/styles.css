@@ -1,4 +1,26 @@
 body {
     background-color:beige;
-    width: 100px;
+
 }
+
+h1.index {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul.NavBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.NavBarLink {
+    display:inline;
+    margin: 10px;
+}
+
+a.NavBarItem  {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
