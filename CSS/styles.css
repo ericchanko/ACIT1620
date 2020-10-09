@@ -7,20 +7,13 @@ h1.index {
     font-family: 'Montserrat', sans-serif;
 }
 
-ul.NavBar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+.navbar {
+    background-color: lightblue;
 
-li.NavBarLink {
-    display:inline;
-    margin: 10px;
 }
 
 a.NavBarItem  {
-    font-family: 'Montserrat', sans-serif;
-
+    padding: 10px;
 }
 
 
