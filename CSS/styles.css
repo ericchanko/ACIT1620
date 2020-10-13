@@ -8,17 +8,15 @@ h1.index {
 
 ul.NavBar {
     background-color: lightblue;
-}
-
-ul.NavBarLink {
     text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-a.NavBarItem  {
-    padding: 10px;
+li.NavBarLink {
+    display:inline;
+    margin: 10px;
 }
 
 
