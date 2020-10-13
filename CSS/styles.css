@@ -8,6 +8,7 @@ h1.index {
 }
 
 ul.NavBar {
+    text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,9 +19,5 @@ li.NavBarLink {
     margin: 10px;
 }
 
-a.NavBarItem  {
-    font-family: 'Montserrat', sans-serif;
-
-}
 
 
