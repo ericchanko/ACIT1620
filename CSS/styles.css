@@ -6,11 +6,11 @@ h1.index {
     font-family: 'Montserrat', sans-serif;
 }
 
-.navbar {
+ul.NavBar {
     background-color: lightblue;
 }
 
-ul.NavBar {
+ul.NavBarLink {
     text-align: center;
     list-style-type: none;
     margin: 0;
