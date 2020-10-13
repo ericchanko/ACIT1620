@@ -1,6 +1,5 @@
 body {
     background-color:beige;
-
 }
 
 h1.index {
@@ -9,11 +8,18 @@ h1.index {
 
 .navbar {
     background-color: lightblue;
+}
 
+ul.NavBar {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a.NavBarItem  {
     padding: 10px;
 }
+
 
 
