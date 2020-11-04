@@ -21,3 +21,28 @@ li.NavBarLink {
 
 
 
+.acit1620, .acit1630 {
+    border-top: 2px lightgrey solid;
+}
+
+
+
+/* Adopting a desktop first approach */
+
+@media screen and (max-width: 600px) {
+
+    li.NavBarLink {
+        display:flex;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .course {
+        display: block;
+    }
+
+}
+
+
+
