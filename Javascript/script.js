@@ -8,16 +8,19 @@ const courseList = [webTech, sysAd, dataB];
 let succesfullyFound = false;
 let validCourseCode = false;
 
+let courseCode = prompt("Enter a course code");
+
 while (!validCourseCode) {
-    let courseCode = prompt("Enter a course code");
-    if (courseCode.length === 4 && !isNaN(parseInt(courseCode))) {
+    if (courseCode.length === 4 && !isNaN(Number(courseCode))) {
         validCourseCode = true;
+        break;
     }
+    courseCode = prompt("Enter a course code");
 }
 
 for (let i = 0; i < courseList.length; i++) {
     if (courseList[i].code.includes(courseCode)) {
-        console.log(`Yes I am taking the course: ${courseList[i].code} - ${courseList[i].name}`);
+        console.log(`Yes, I am taking the course: ${courseList[i].code} - ${courseList[i].name}`);
         succesfullyFound = true;
     }
 }
@@ -27,5 +30,5 @@ for (let i = 0; i < courseList.length; i++) {
 if (!succesfullyFound) {
     let newObj = {code: prompt, name:null};
     courseList.push(newObj);
-    console.log(`Successfully added ${prompt}`);
+    console.log(`Successfully added Course ${courseCode}`);
 }
