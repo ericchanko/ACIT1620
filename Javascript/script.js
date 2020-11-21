@@ -25,10 +25,52 @@ for (let i = 0; i < courseList.length; i++) {
     }
 }
 
-
-
 if (!succesfullyFound) {
     let newObj = {code: prompt, name:null};
     courseList.push(newObj);
     console.log(`Successfully added Course ${courseCode}`);
+}
+
+function createCourseArray() {
+    let courseList = document.querySelectorAll('.course');
+    let newCourseList = [];
+    for (let i=0; i<courseList.length; i++) {
+        let newObj = {
+            code: courseList[i].querySelector('a').innerHTML,
+            date: courseList[i].querySelector('.year').innerHTML
+        };
+        newCourseList.push(newObj);
+    }
+    return newCourseList
+}
+
+function findCourse() {
+    let courseList = createCourseArray();
+    let code= getValidCode();
+    let foundCode = false;
+
+    for (let i =0; i <courseList.length; i++) {
+        if (courseList[i].code.indexOf(code) > -1) {
+            foundCode = true;
+            console.log('changing color of background');
+        }
+    }
+
+    if (!foundCode) {
+        console.log('code not found, creating new one!');
+    }
+
+}
+
+function getValidCode() {
+    let courseCode = prompt("Enter a course code");
+
+    while (!validCourseCode) {
+        if (courseCode.length === 4 && !isNaN(Number(courseCode))) {
+            validCourseCode = true;
+            break;
+        }
+        courseCode = prompt("Enter a course code");
+    }
+    return courseCode;
 }
